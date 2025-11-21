@@ -25,6 +25,7 @@ document.querySelector('#app').innerHTML = `
     </a>
     <h1>Hello Vite!</h1>
     <div class="card">
+      <p>Env var: ${import.meta.VITE_SOME_VAL_1}</p>
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
@@ -34,3 +35,4 @@ document.querySelector('#app').innerHTML = `
 `;
 
 setupCounter(document.querySelector('#counter'));
+console.log(import.meta.env);
